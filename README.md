@@ -1,0 +1,2 @@
+# Neovim Configuration
+> pure lua
