@@ -18,7 +18,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<leader>c", ":nohl<CR>", opts)
 
 -- reload configuration without restart nvim
-keymap('n', '<leader>r', ':so %<CR>', opts)
+keymap('n', '<leader>r', ':luafile %<CR>', opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>", opts)

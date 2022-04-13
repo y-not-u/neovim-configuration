@@ -13,10 +13,10 @@ return require('packer').startup({
        },
        config = function() require'nvim-tree'.setup {} end
     }
-    use {"tpope/vim-vinegar"}
+    use 'tpope/vim-vinegar'
     use 'EdenEast/nightfox.nvim'
     use 'mhinz/vim-startify'
-    use "akinsho/toggleterm.nvim"
+    use 'akinsho/toggleterm.nvim'
     use 'folke/which-key.nvim'
     use {'neoclide/coc.nvim', branch = 'release'}
     use 'lukas-reineke/indent-blankline.nvim'
@@ -32,6 +32,7 @@ return require('packer').startup({
     use 'romgrk/barbar.nvim'
     use 'lewis6991/gitsigns.nvim'
   end,
+
   config = {
     max_jobs = 16,
     git = {
@@ -42,7 +43,7 @@ return require('packer').startup({
     },
     display = {
       open_fn = function()
-	  return require('packer.util').float({ border = 'single' })
+        return require('packer.util').float({ border = 'single' })
       end
     }
   }
