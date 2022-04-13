@@ -20,4 +20,8 @@ opt.tabstop=4
 opt.shiftwidth=4
 opt.expandtab=true -- converts tabs to white space
 opt.autoindent=true -- indent a new line the same amount as the line just typed
-
+opt.autochdir=false
+opt.autowrite=true
+opt.backup=false
+opt.writebackup=false
+opt.termguicolors=true

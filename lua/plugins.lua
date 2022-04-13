@@ -20,24 +20,24 @@ return require('packer').startup({
     use 'folke/which-key.nvim'
     use {'neoclide/coc.nvim', branch = 'release'}
     use 'lukas-reineke/indent-blankline.nvim'
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
+    use 'nvim-lualine/lualine.nvim'
     use {
         'nvim-telescope/telescope.nvim',
         requires = {'nvim-lua/plenary.nvim'}
     }
     use 'nvim-telescope/telescope-project.nvim'
     use 'tpope/vim-fugitive'
+    use 'tpope/vim-commentary'
+    use 'rcarriga/nvim-notify'
+    use 'romgrk/barbar.nvim'
   end,
   config = {
     max_jobs = 16,
     git = {
       -- default_url_format = "https://hub.fastgit.xyz/%s",
-      default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
+      -- default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
       -- default_url_format = "https://gitcode.net/mirrors/%s",
-      -- default_url_format = "https://gitclone.com/github.com/%s",
+      default_url_format = "https://gitclone.com/github.com/%s",
     },
     display = {
       open_fn = function()

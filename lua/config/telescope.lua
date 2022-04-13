@@ -6,3 +6,4 @@ keymap('n', 'fg', ':Telescope live_grep<CR>', opts)
 keymap('n', 'fp', ':Telescope project<CR>', opts)
 
 require('telescope').load_extension('project')
+require('telescope').load_extension('notify')

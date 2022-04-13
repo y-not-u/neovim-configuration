@@ -27,3 +27,11 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>", opts)
 -- Insert Mode
 -- Press jk fast to enter
 keymap("i", ";;", "<ESC>", opts)
+keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
+
+-- tab
+keymap("n", "<S-h>", ":tabprevious<CR>", opts)
+keymap("n", "<S-l>", ":tabnext<CR>", opts)
+keymap('n', "tn", ":tabnew<CR>", opts)
+keymap('n', "td", ":tabclose<CR>", opts)
