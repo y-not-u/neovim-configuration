@@ -35,3 +35,7 @@ keymap("n", "<S-h>", ":tabprevious<CR>", opts)
 keymap("n", "<S-l>", ":tabnext<CR>", opts)
 keymap('n', "tn", ":tabnew<CR>", opts)
 keymap('n', "td", ":tabclose<CR>", opts)
+
+-- split view
+keymap('n', 'vs', ':vs<CR>', opts)
+keymap('n', 'sp', ':sp<CR>', opts)
