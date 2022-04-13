@@ -30,6 +30,7 @@ return require('packer').startup({
     use 'tpope/vim-commentary'
     use 'rcarriga/nvim-notify'
     use 'romgrk/barbar.nvim'
+    use 'lewis6991/gitsigns.nvim'
   end,
   config = {
     max_jobs = 16,
