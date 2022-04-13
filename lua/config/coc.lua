@@ -11,4 +11,4 @@ keymap('i', '<TAB>', "pumvisible() ? '<C-n>' : '<TAB>'", {noremap = true, silent
 keymap('i', '<S-TAB>', "pumvisible() ? '<C-p>' : '<c-h>'", {noremap = true, silent = true, expr = true})
 keymap('i', '<CR>', "pumvisible() ? coc#_select_confirm() : '<C-g>u<CR><C-r>=coc#on_enter()<CR>'", {noremap = true, expr = true, silent = true})
 
-keymap('n', 'F2', '<Plug>(coc-rename)', {})
+keymap('n', '<F2>', '<Plug>(coc-rename)', {})
