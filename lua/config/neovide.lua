@@ -1,2 +1,3 @@
-vim.g.neovide_transparency = 0.8
-vim.g.neovide_remember_window_size = true
+local g = vim.g
+g.neovide_transparency = 0.9
+g.neovide_remember_window_size = true

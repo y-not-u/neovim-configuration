@@ -2,6 +2,7 @@ local cmd = vim.cmd
 local g = vim.g
 local opt = vim.opt
 
+opt.mouse='a'
 opt.encoding='utf-8'
 opt.hidden=true
 opt.swapfile=false
@@ -26,3 +27,5 @@ opt.backup=false
 opt.writebackup=false
 opt.termguicolors=true
 opt.colorcolumn="80"
+
+opt.guifont="agave Nerd Font Mono r"
