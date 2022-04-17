@@ -13,7 +13,7 @@ require("toggleterm").setup {
     start_in_insert = true,
     insert_mappsings = true,
     terminal_mappings = true,
-    direction = "vertical",
+    direction = "float",
     shell = "C:/PROGRA~1/Git/bin/bash.exe --login -i",
     close_on_exit = true,
     persist_size = true,

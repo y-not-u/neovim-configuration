@@ -5,7 +5,7 @@ local cmd = vim.cmd
 cmd(':command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument')
 
 keymap('n', 'K', ":call CocActionAsync('doHover')<CR>", opts)
-keymap('n', 'gd', '<Plug>(coc-definition)', opts)
+keymap('n', 'gd', '<Plug>(coc-definition)', {silent = true})
 keymap('n', '<leader>.', '<Plug>(coc-codeaction)', {})
 keymap('i', '<TAB>', "pumvisible() ? '<C-n>' : '<TAB>'", {noremap = true, silent = true, expr = true})
 keymap('i', '<S-TAB>', "pumvisible() ? '<C-p>' : '<c-h>'", {noremap = true, silent = true, expr = true})
